@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Vidya</title>
+</head>
+<body>
+<script src="app.js" defer></script>
+
+  <!-- <div class="popup">
+    <div class="popup-data">
+      hi
+    </div>
+  </div> -->
+    <div class="page">
+    <div class="main">
+        <h1><a href="#">e-Vidya</a></h1>
+        <h1><a href="#">home</a></h1>
+        <h1><a href="#">e-books</a></h1>
+        <h1><a href="#">Asist-lms</a></h1>
+    </div>
+    <div class="main-logo">
+        <img src="logos/main.jpeg" alt="">
+    </div>
+    <div class="img-scroller">
+      <div class="menu-index">
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+        <span>hello</span>
+      </div>
+        <img id="img" src="images/1.jpeg" alt="">
+        <div class="img-list">
+            <img src="images/1.jpeg" alt="" onclick="openImg('images/1.jpeg')">
+            <img src="images/2.jpeg" alt="" onclick="openImg('images/2.jpeg')">
+            <img src="images/3.jpeg" alt="" onclick="openImg('images/3.jpeg')">
+            <img src="images/4.jpeg" alt="" onclick="openImg('images/4.jpeg')">
+            <img src="images/5.jpeg" alt="" onclick="openImg('images/5.jpeg')">
+        </div>
+        <div class="btn">
+     <button onclick="prev()">prev</button>
+    <button onclick="next()">next</button>
+        </div>
+   </div>
+    <div id="table">
+    <span>open access e-journals:</span>
+    <table>
+      <div id="cursor"></div>
+        <tr>
+        <td>International Journal of Engineering and Technology (IJET)</td>
+        <td><a href="https://www.engpaper.com/ijet.htm">https://www.engpaper.com/ijet.htm</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Mechanical Engineering and Robotics Research (IJMERR)</td>
+        <td><a href="http://www.ijmerr.com/">http://www.ijmerr.com/</a></td>
+      </tr>
+      <tr>
+        <td>Journal of Advanced Research in Mechanical Engineering and Technology (JARMET)</td>
+        <td><a href="http://jarmet.in/website/">http://jarmet.in/website/</a></td>
+      </tr>
+      <tr>
+        <td>Journal of Engineering and Applied Sciences (JEAS)</td>
+        <td><a href="http://www.arpnjournals.com/jeas/">http://www.arpnjournals.com/jeas/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Civil Engineering Research (IJCER)</td>
+        <td><a href="http://www.ijceronline.com/">http://www.ijceronline.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Advanced Research in Electrical, Electronics and Instrumentation Engineering (IJAREEIE)</td>
+        <td><a href="http://www.ijareeie.com/">http://www.ijareeie.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Emerging Technology and Advanced Engineering (IJETAE)</td>
+        <td><a href="https://www.ijetae.com/">https://www.ijetae.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Mechanical Engineering and Technology (IJMET)</td>
+        <td><a href="http://www.iaeme.com/ijmet/index.asp">http://www.iaeme.com/ijmet/index.asp</a></td>
+      </tr>
+      <tr>
+        <td>Journal of Advanced Manufacturing Technology (JAMT)</td>
+        <td><a href="http://jamt.utem.edu.my/">http://jamt.utem.edu.my/</a></td>
+      </tr>
+      <tr>
+        <td>Journal of Electrical Engineering and Technology (JEET)</td>
+        <td><a href="http://www.jeet.or.kr/">http://www.jeet.or.kr/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Innovative Research in Science, Engineering, and Technology (IJIRSET)</td>
+        <td><a href="http://www.ijirset.com/">http://www.ijirset.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Recent Technology and Engineering (IJRTE)</td>
+        <td><a href="https://www.ijrte.org/">https://www.ijrte.org/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Engineering Technology Science and Research (IJETSR)</td>
+        <td><a href="http://www.ijetsr.com/">http://www.ijetsr.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Emerging Trends in Engineering Research (IJETER)</td>
+        <td><a href="https://www.ijeter.everscience.org/">https://www.ijeter.everscience.org/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Engineering Development and Research (IJEDR)</td>
+        <td><a href="https://www.ijedr.org/">https://www.ijedr.org/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Mechanical and Production Engineering Research and Development (IJMPERD)</td>
+        <td><a href="https://www.ijmperd.org/">https://www.ijmperd.org/</a></td>
+      </tr>
+      <tr>
+        <td>Journal of Electrical Systems and Information Technology (JESIT)</td>
+        <td><a href="https://www.jesit.org/">https://www.jesit.org/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Engineering Science and Management Research (IJESMR)</td>
+        <td><a href="https://ijesmr.com/">https://ijesmr.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Electronics Communication and Computer Engineering (IJECCE)</td>
+        <td><a href="http://www.ijecce.org/">http://www.ijecce.org/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Mechanical and Industrial Engineering (IJMIE)</td>
+        <td><a href="https://www.ijmie.com/">https://www.ijmie.com/</a></td>
+      </tr>
+      <tr>
+        <td>International Journal of Engineering and Innovative Technology (IJEIT)</td>
+        <td><a href="http://www.ijeit.com/">http://www.ijeit.com/</a></td>
+      </tr>
+    </table>
+   </div>
+</div>
+</body>
+</html>
